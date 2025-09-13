@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact — Armeena Sajjad</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-layout {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      padding: 2rem 1rem;
+    }
+
+    .contact-title {
+      margin: 0;
+      font-size: clamp(1.6rem, 2.5vw, 2rem);
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .contact-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .btn-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.9rem 1.3rem;
+      min-width: 180px;
+      justify-content: center;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 999px;
+      background: #f5f5f5;
+      color: #222;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    .btn-pill--outline {
+      border: 2px solid currentColor;
+      background: transparent;
+    }
+
+    .btn-ico {
+      display: inline-flex;
+      width: 22px;
+      height: 22px;
+    }
+
+    .btn-ico svg {
+      width: 22px;
+      height: 22px;
+      display: block;
+    }
+    .footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header" role="navigation" aria-label="Main">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span> <span>Armeena Sajjad</span></div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="#contact" aria-current="page">Contact</a>
+      </nav>
+    </header>
+    <main class="grid" aria-label="Contact">
+      <section class="card center" id="contact">
+        <div class="contact-layout">
+          <h2 class="contact-title">Let’s Connect!</h2>
+          <div class="contact-actions">
+            <a class="btn-pill btn-pill--outline"
+              href="https://www.linkedin.com/in/armeena-sajjad/"
+              target="_blank" rel="noopener"
+              aria-label="Open LinkedIn profile">
+              <span class="btn-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.5h4.52v14.5H.24V8.5zM8.64 8.5h4.33v1.98h.06c.6-1.14 2.07-2.34 4.26-2.34 4.55 0 5.39 3 5.39 6.9v7.46h-4.51v-6.61c0-1.58-.03-3.61-2.2-3.61-2.2 0-2.53 1.72-2.53 3.5v6.72H8.64V8.5z"/>
+                </svg>
+              </span>
+              <span>LinkedIn</span>
+            </a>
+            <a class="btn-pill" href="mailto:armeenasajjad@gmail.com" id="emailBtn">
+              <span class="btn-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8l8 7 8-7v10H4z"/>
+                </svg>
+              </span>
+              <span>Email</span>
+            </a>
+            <a class="btn-pill"
+              href="https://github.com/wrmeenw"
+              target="_blank" rel="noopener"
+              aria-label="Open GitHub profile">
+              <span class="btn-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.96.58.11.79-.25.79-.56v-2c-3.2.7-3.87-1.39-3.87-1.39-.53-1.36-1.3-1.72-1.3-1.72-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.26 3.4.96.11-.76.41-1.26.74-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.3 1.19-3.11-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.19a11.1 11.1 0 0 1 5.8 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.59.23 2.76.11 3.05.74.81 1.19 1.85 1.19 3.11 0 4.43-2.69 5.41-5.25 5.7.42.36.8 1.07.8 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+              </span>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({
+            behavior: "smooth"
+          });
+        }
+      });
+    });
+    const emailBtn = document.getElementById("emailBtn");
+    if (emailBtn) {
+      emailBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        const email = "yourname@email.com"; // change to your real email
+        navigator.clipboard.writeText(email).then(() => {
+          alert("Email copied to clipboard!");
+          window.location.href = "mailto:" + email;
+        });
+      });
+    }
+  </script>
+</body>
+</html>

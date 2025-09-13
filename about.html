@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Me — Armeena Sajjad</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .bio.card{
+      grid-column: 1 / -1;              
+      padding: 22px 22px;
+    }
+    .bio-inner{
+      display: flex;
+      align-items: flex-start;
+      gap: 22px;
+    }
+    .bio h2{
+      margin: 6px 0 10px;
+      color: var(--accent);
+      min-width: 80px;
+      flex: 0 0 auto;
+    }
+    .bio-text{
+      margin: 0;
+      line-height: 1.6;
+      flex: 1 1 auto;
+    }
+    .bio-media{
+      flex: 0 0 160px;
+    }
+    .bio-media img{
+      width: 160px; height: 160px; object-fit: cover;
+      border-radius: 14px; border: 1px solid var(--muted);
+      box-shadow: var(--shadow);
+    }
+    .bottom-sections {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      grid-column: 1 / -1;
+      margin-top: 2rem;
+    }
+    @media (max-width: 840px){
+      .bio-inner{ flex-direction: column; }
+      .bio h2{ margin-bottom: 0; }
+      .bottom-sections { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header" role="navigation" aria-label="Main">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span> <span>Armeena Sajjad</span></div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About Me</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="grid" aria-label="About Me">
+      <section class="card bio">
+        <div class="bio-inner">
+          <div>
+            <h2>BIO</h2>
+            <p class="bio-text">
+              I’ve always been curious about technology, and in 2023 I chose to pursue Computer Systems Engineering at Carleton to combine my love for building, problem-solving, and computers. Engineering is a heavy field, so balance is really important to me, staying active through soccer, running, going to the gym, or even just casual walks with friends helps me recharge. Having that balance makes me enjoy computer engineering even more, because I can come back to it with fresh energy and perspective. I also enjoy getting involved in my school’s community by joining various clubs. At the moment, I’m part of Women in Engineering (WIE), a student-led group that works to increase the participation of women in IEEE through both helpful and fun events, and I also volunteer with BioCare - Carleton's chapter, where I’m contributing to the development of a prosthetic arm.
+              <br><br>
+              Besides these points, I find myself becoming a stronger Computer Systems student every day as I push myself to keep learning and growing into a more professional version of who I want to be. I like to think of my potential as something I get to unlock bit by bit, so I make sure to stay updated with new information and take every opportunity to learn.
+              <br><br>
+              Right now, I’ve developed a strong interest in front-end & back-end development, which I find really enjoyable and want to continue exploring. At the same time, I’m fascinated by computer design thanks to my classes, and I love that my program gives me the chance to dive into both sides of technology.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="bottom-sections">
+        <section class="card">
+          <h2>Skills</h2>
+          <ul>
+            <li><strong>Programming:</strong> C, Java, Python, JavaScript, Assembly</li>
+            <li><strong>Web:</strong> HTML, CSS, JSX</li>
+            <li><strong>Tools:</strong> Git, GitHub, Azure DevOps, Linux</li>
+            <li><strong>Design & Simulation Tools:</strong> AutoCAD, Fusion 360, Logisim, Multisim, MATLAB</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Interested in & Currently Learning</h2>
+          <ul>
+            <li>React / React Native & component design</li>
+            <li>Node.js & backend development</li>
+            <li>Embedded systems (MCUs, timers, ISRs)</li>
+            <li>AI & Machine Learning</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
